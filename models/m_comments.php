@@ -13,3 +13,9 @@ function get_comments_by_problem_id($pr_id) {
     return $comments;
 }
 
+function add_comment($id, $username, $commenttext, $date){
+	
+	$sql="INSERT INTO comments (comment, user_id, problem_id, post_date) VALUES ('$commenttext' , '1', '$id', '3232')";
+	$noob=mysql_query($sql);
+}
+

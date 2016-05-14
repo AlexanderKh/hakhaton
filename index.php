@@ -8,7 +8,7 @@ startup();
 
 $problems=problems_all();
 
-$title="������� �������";
+$title="пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 
 $parameter='pr';
 
