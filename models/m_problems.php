@@ -19,3 +19,8 @@ function get_problem_by_id($id) {
 
 	return mysql_fetch_assoc($result);
 }
+
+function create_problem ($title, $description, $category_id) {
+	$sql = "INSERT INTO problems(title, description, category_id, approved, creation_date, user_id) VALUES('$title', '$description', '$category_id', 1, NOW(), 1)";
+	mysql_query($sql);
+}
