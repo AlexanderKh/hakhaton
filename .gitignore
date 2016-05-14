@@ -12,6 +12,9 @@
 
 # Sensitive or high-churn files:
 .idea/dataSources.ids
+/.idea
+/hakhaton.iml
+/.idea/encodings.xml
 .idea/dataSources.xml
 .idea/dataSources.local.xml
 .idea/sqlDataSources.xml
