@@ -17,7 +17,7 @@ if (isset($_POST['title']) && ($_POST['description']) && ($_POST['category_id'])
 
 $categories=get_all_categories();
 
-$title="???? ????????";
+$title="Нова проблема";
 
 $parameter='pl';
 

@@ -41,7 +41,7 @@ function get_unapproved_problems() {
 }
 
 function get_approved_problems() {
-	return select_by_sql("SELECT * FROM problems WHERE approved = 1");
+	return select_by_sql("SELECT * FROM problems WHERE approved = 1 ORDER BY creation_date DESC");
 }
 
 function approve($id) {
@@ -54,4 +54,16 @@ function approve($id) {
 function delete_problem($id) {
 	$sql = "DELETE FROM problems WHERE id = '$id'";
 	mysql_query($sql);
+}
+
+function get_problems_by_category($id){
+	$sql = "SELECT * FROM problems WHERE category_id='$id'";
+	$result=mysql_query($sql);
+	$n = mysql_num_rows($result);
+	
+	$problem = array();
+	for ($i = 0; $i < $n; $i++)
+		$problem[] = mysql_fetch_assoc($result);
+	
+	return $problem;
 }
