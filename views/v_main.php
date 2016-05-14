@@ -6,12 +6,12 @@
 </head>
 <body>
 <div class="header">
-<h1>сайт обговорень , рішень проблем міста</h1>
+<h1>СЃР°Р№С‚ РѕР±РіРѕРІРѕСЂРµРЅСЊ , СЂС–С€РµРЅСЊ РїСЂРѕР±Р»РµРј РјС–СЃС‚Р°</h1>
 </div>
 
 <div class="left-sidebar">
-<br><a href="#">Кнопка1</a></br>
-<br><a href="#">Кнопка2</a></br>
+<br><a href="#">РљРЅРѕРїРєР°1</a></br>
+<br><a href="#">РљРЅРѕРїРєР°2</a></br>
 <br><a href="#">Button3</a></br>
 <br><a href="#">Button4</a></br>
 </div>
