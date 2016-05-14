@@ -1,4 +1,5 @@
 <?php
+    include_once 'm_startup.php';
 
 function select_all_by_table ($tname) {
     $sql = ("SELECT * FROM $tname");
@@ -11,4 +12,11 @@ function select_all_by_table ($tname) {
         $collection[] = mysql_fetch_assoc($result);
 
     return $collection;
+}
+
+function get_entity_by_id ($tname, $id) {
+    $sql = "SELECT * FROM $tname WHERE id = '$id'";
+    $result = mysql_query($sql);
+
+    return mysql_fetch_assoc($result);
 }
