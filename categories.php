@@ -7,6 +7,7 @@ include_once('models/m_problems.php');
 
 startup();
 
+$allcategories=get_all_categories();
 
 if (isset($_GET['list'])) {
     $id = $_GET['list'];
@@ -75,6 +76,6 @@ $content = view_include(
 
 $page = view_include(
     'views/v_main.php',
-    array('title' => 'categories', 'content' => $content, 'categories' => $categories));
+    array('title' => 'categories', 'content' => $content, 'categories' => $categories, 'allcategories' => $allcategories));
 
 echo $page;

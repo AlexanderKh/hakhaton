@@ -7,28 +7,29 @@ body {
 }
 
 .button {
-background-color:#ba2323;
-padding:10px;
-position:relative;
-font-family: 'Open Sans', sans-serif;
-font-size:12px;
-text-decoration:none;
-color:#fff;
-border: solid 1px #831212;
-border-radius: 10px;
+	background-color:#6fba26;
+	padding:10px;
+	position:relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color:#fff;
+	background-image: linear-gradient(bottom, rgb(100,170,30) 0%, rgb(129,212,51) 100%);
+	box-shadow: inset 0px 1px 0px #b2f17f, 0px 6px 0px #3d6f0d;
+	border-radius: 5px;
 }
 
 .button:active {
-padding-bottom:9px;
-padding-left:10px;
-padding-right:10px;
-padding-top:11px;
-top:1px;
+	top:7px;
+	background-image: linear-gradient(bottom, rgb(100,170,30) 100%, rgb(129,212,51) 0%);
+	box-shadow: inset 0px 1px 0px #b2f17f, inset 0px -1px 0px #3d6f0d;
+	color: #156785;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
+	background: rgb(44,160,202);
 }
-
 h1 {
 	text-align: center;
-    font-weight: 700;
+	font-weight: 700;
 	padding-top: 2%;
 }
 h2 {
@@ -75,6 +76,8 @@ h2 {
 	opacity: 0.9;
 }
 .content .new {
+	width: 20%;
+	height: 20%;
 	opacity: 1;
 	background-color: white;
 	border-radius: 7px;
@@ -85,18 +88,40 @@ h2 {
 	margin-left: 2%;
 	margin-top: 2%;
 }
+.content .novost {
+	width: 98%;
+	height: 50%;
+	opacity: 1;
+	background-color: white;
+	border-radius: 7px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	color: black;
+	position: relative;
+	margin-left: 1%;
+	margin-top: 2%;
+
+}
 .content .new_one {
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
-	width: 90%;
-	min-height: 30%;
+	width: 45%;
+	min-height: 40%;
 	position: relative;
 	padding-left: 1%;
 	background-color: white;
-	margin-left: 5%;
+	margin-left: 22.5%;
 	margin-top: 30%;
 	margin-bottom: 3%;
 	opacity: 1;
+}
+.content .new_one .comm {
+	width: 80%;
+	height: 28%;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	position: relative;
+	margin-left: 9%;
+	background-color: black;
 }
 .content .tema {
 	width: 90%;
@@ -143,8 +168,4 @@ h2 {
 	position: relative;
 	float: left;
 	opacity: 0.7;
-}
-
-.inline {
-	display: inline-block;
 }

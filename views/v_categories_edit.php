@@ -4,3 +4,4 @@
     <input type="text" name="name" value="<?= $category['name'] ?>">
     <button type="submit" name="delete">Редактировать</button>
 </form>
+
