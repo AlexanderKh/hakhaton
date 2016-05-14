@@ -12,17 +12,21 @@
 </div>
 
 <div class="left-sidebar">
-<br><a href="index.php">Головна</a></br>
-<br><a href="categories.php?mode=edit" class="button">Категории</a></br>
-<br><a href="admin.php">Адміністрування</a></br>
-<br><a href="#">Button3</a></br>
-<br><a href="#">Button4</a></br>
-<br><a href="#" class="button">button</a></br>
-<br><a href="#" class="button">button</a></br>
-
-<? foreach ($allcategories as $category): ?>
-<br><a href="categories.php?list=<?=$category['id']?>" class="button"><?=$category['name']?></a></br>
-<? endforeach;?>
+    <br>
+    <a href="index.php" class="button">Головна</a>
+    <br>
+    <br>
+    <a href="categories.php" class="button">Категории</a>
+    <br>
+    <br>
+    <a href="admin.php" class="button">Адміністрування</a>
+    <br>
+    <br>
+    <? foreach ($allcategories as $category): ?>
+        <a href="categories.php?list=<?=$category['id']?>" class="button"><?=$category['name']?></a>
+        <br>
+        <br>
+    <? endforeach;?>
 </div>
 
 <?=$content;?>

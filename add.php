@@ -23,7 +23,7 @@ $parameter='pl';
 
 $content = view_include(
 	'views/v_add_problem.php', 
-	array('problem' => $problem, 'comments' => $comments, 'categories' => $categories));
+	array('categories' => $categories));
 
 // ??????? ??????.
 $page = view_include(

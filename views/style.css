@@ -44,3 +44,11 @@ h1 {
 	position: relative;
 	float: left;
 }
+
+.left-sidebar a {
+	display: block;
+}
+
+.inline {
+	display: inline-block;
+}

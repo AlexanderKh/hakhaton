@@ -6,14 +6,14 @@
     <div class="new">
     <? if ($is_admin): ?>
         <? if ($problem['approved'] == 0): ?>
-            <article> Непідтверджене </article>
-            <form action="problems.php" method="post">
+            <article class="inline"> Непідтверджене </article>
+            <form action="problems.php" method="post" class="inline">
                 <input type="hidden" name="id" value="<?= $problem['id'] ?>">
                 <input type="hidden" name="method" value="approve">
                 <button type="submit" name="delete">Подтвердить</button>
             </form>
         <?endif;?>
-        <form action="problems.php" method="post">
+        <form action="problems.php" method="post" class="inline">
             <input type="hidden" name="id" value="<?= $problem['id'] ?>">
             <input type="hidden" name="method" value="delete">
             <button type="submit" name="delete">Удалить</button>

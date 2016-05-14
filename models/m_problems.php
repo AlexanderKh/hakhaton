@@ -22,9 +22,11 @@ function get_problem_by_id($id) {
 	return mysql_fetch_assoc($result);
 }
 
-function create_problem ($title, $description, $category_id) {
-	$sql = "INSERT INTO problems(title, description, category_id, approved, creation_date, user_id) VALUES('$title', '$description', '$category_id', 0, NOW(), 1)";
-	mysql_query($sql);
+function create_problem ($title, $description, $category_id)
+{
+	$sql = "INSERT INTO problems(title, description, category_id, approved, creation_date) VALUES('$title', '$description', '$category_id', 0, NOW())";
+	d($sql, $die = 0);
+	$result = mysql_query($sql);
 }
 
 function update_problem ($id, $title, $description, $category_id) {

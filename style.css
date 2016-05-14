@@ -75,8 +75,6 @@ h2 {
 	opacity: 0.9;
 }
 .content .new {
-	width: 20%;
-	height: 20%;
 	opacity: 1;
 	background-color: white;
 	border-radius: 7px;
@@ -145,4 +143,8 @@ h2 {
 	position: relative;
 	float: left;
 	opacity: 0.7;
+}
+
+.inline {
+	display: inline-block;
 }
