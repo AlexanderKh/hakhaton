@@ -2,7 +2,6 @@
 <head>
 <meta charset="UTF-8">
 <title><?= $title ?></title>
-=======
 <meta charset="utf-8">
 <title></title>
 <link rel="stylesheet" href="style.css">
@@ -11,10 +10,11 @@
 <body>
 
 <div class="header">
-<h1>сайт обговорень , рішень проблем міста</h1>
+<h1><a href="index.php">сайт обговорень , рішень проблем міста</a></h1>
 </div>
 
 <div class="left-sidebar">
+<br><a href="index.php">Головна</a></br>
 <br><a href="categories.php">Категории</a></br>
 <br><a href="#">Кнопка2</a></br>
 <br><a href="#">Button3</a></br>
@@ -24,8 +24,6 @@
 </div>
 
 <?=$content;?>
-
-
 
 <div class="footer">
 </div>
