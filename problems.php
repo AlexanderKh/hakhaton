@@ -8,6 +8,19 @@ include_once('models/m_main_functions.php');
 // Установка параметров, подключение к БД, запуск сессии.
 startup();
 
+if (isset($_POST['method'])) {
+	switch ($_POST['method']) {
+		case 'delete':
+			delete_problem($_POST['id']);
+			header('Location: admin.php');
+			die();
+		case 'approve':
+			approve($_POST['id']);
+			header("Location: admin.php");
+			die();
+	}
+}
+
 if (isset($_POST['name_user']) && ($_POST['comment_text'])){
 	add_comment($_GET['id'], $_POST['name_user'], $_POST['comment_text'], "lol");
 	

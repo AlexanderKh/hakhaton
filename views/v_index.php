@@ -1,16 +1,31 @@
 
 <div class="content">
-<a href="/add.php">Додати свою новину</a>
-<?foreach ($problems as $problem): ?>
-<div class="new">
-<h2><a href="lel"><?=$problem['title'];?></a></h2>
-<article>
+<a href="add.php">Додати свою новину</a>
+<?php foreach ($problems as $problem): ?>
 
-<a href="/problems.php?id=<?=$problem['id'];?>"><?=$problem['title'];?></a> </br>
+    <div class="new">
+    <? if ($is_admin): ?>
+        <? if ($problem['approved'] == 0): ?>
+            <article> Непідтверджене </article>
+            <form action="problems.php" method="post">
+                <input type="hidden" name="id" value="<?= $problem['id'] ?>">
+                <input type="hidden" name="method" value="approve">
+                <button type="submit" name="delete">Подтвердить</button>
+            </form>
+        <?endif;?>
+        <form action="problems.php" method="post">
+            <input type="hidden" name="id" value="<?= $problem['id'] ?>">
+            <input type="hidden" name="method" value="delete">
+            <button type="submit" name="delete">Удалить</button>
+        </form>
+    <? endif; ?>
+    <article>
+        <h2>
+            <a href="problems.php?id=<?=$problem['id'];?>"><?=$problem['title'];?></a>
+        </h2>
+    </article>
 
-</article>
-
-<br><article>5/14/2016</article></br>
-</div>
-<? endforeach;?>
+    <br><article><?= $problem['creation_date'] ?></article></br>
+    </div>
+<?php endforeach;?>
 </div>

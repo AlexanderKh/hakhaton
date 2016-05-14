@@ -20,3 +20,14 @@ function get_entity_by_id ($tname, $id) {
 
     return mysql_fetch_assoc($result);
 }
+
+function select_by_sql ($sql) {
+    $result = mysql_query($sql);
+    $n = mysql_num_rows($result);
+
+    $collection = array();
+    for ($i = 0; $i < $n; $i++)
+        $collection[] = mysql_fetch_assoc($result);
+
+    return $collection;
+}

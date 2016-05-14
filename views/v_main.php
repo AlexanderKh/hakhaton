@@ -16,7 +16,7 @@
 <div class="left-sidebar">
 <br><a href="index.php">Головна</a></br>
 <br><a href="categories.php">Категории</a></br>
-<br><a href="#">Кнопка2</a></br>
+<br><a href="admin.php">Адміністрування</a></br>
 <br><a href="#">Button3</a></br>
 <br><a href="#">Button4</a></br>
 <br><a href="#" class="button">button</a></br>

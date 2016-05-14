@@ -6,7 +6,7 @@ include_once('models/m_main_functions.php');
 
 startup();
 
-$problems=problems_all();
+$problems=get_approved_problems();
 
 $title="пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 
@@ -14,7 +14,7 @@ $parameter='pr';
 
 $content = view_include(
 	'views/v_index.php', 
-	array('problems' => $problems));
+	array('problems' => $problems, 'is_admin' => false));
 
 $page = view_include(
 	'views/v_main.php', 

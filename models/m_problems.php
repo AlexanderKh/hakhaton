@@ -1,7 +1,9 @@
 <?php
 
+include_once 'helpers.php';
+
 function problems_all (){
-	$sql = ("SELECT * FROM problems");
+	$sql = ("SELECT * FROM problems ORDER BY approved ASC");
 	
 	$result = mysql_query($sql);
 	$n = mysql_num_rows($result);
@@ -21,7 +23,7 @@ function get_problem_by_id($id) {
 }
 
 function create_problem ($title, $description, $category_id) {
-	$sql = "INSERT INTO problems(title, description, category_id, approved, creation_date, user_id) VALUES('$title', '$description', '$category_id', 1, NOW(), 1)";
+	$sql = "INSERT INTO problems(title, description, category_id, approved, creation_date, user_id) VALUES('$title', '$description', '$category_id', 0, NOW(), 1)";
 	mysql_query($sql);
 }
 
@@ -31,5 +33,25 @@ function update_problem ($id, $title, $description, $category_id) {
 				description='$description', 
 				category_id='$category_id' 
 			WHERE id='$id'";
+	mysql_query($sql);
+}
+
+function get_unapproved_problems() {
+	return select_by_sql("SELECT * FROM problems WHERE approved = 0");
+}
+
+function get_approved_problems() {
+	return select_by_sql("SELECT * FROM problems WHERE approved = 1");
+}
+
+function approve($id) {
+	$sql = "UPDATE problems
+			SET approved=1
+			WHERE id='$id'";
+	mysql_query($sql);
+}
+
+function delete_problem($id) {
+	$sql = "DELETE FROM problems WHERE id = '$id'";
 	mysql_query($sql);
 }

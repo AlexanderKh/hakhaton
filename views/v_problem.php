@@ -1,7 +1,10 @@
 
 <div class="content">
-<article>Новость
-.......................
+<article>
+    <?= $problem['title'] ?>
+</article>
+<article>
+    <?= $problem['description'] ?>
 </article>
 <div class="new_one">
 <article><? foreach ($comments as $comment):?>
