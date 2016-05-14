@@ -6,8 +6,7 @@ include_once('models/m_main_functions.php');
 
 startup();
 
-$problems=problems_all(); //
-
+$problems=problems_all();
 
 $title="������� �������";
 
@@ -21,7 +20,6 @@ $page = view_include(
 	'views/v_main.php', 
 	array('title' => $title, 'content' => $content, 'parameter' => $parameter));
 
-// �����.
 echo $page;
 
 ?>
