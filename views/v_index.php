@@ -15,7 +15,7 @@
                 <form action="problems.php" method="post" class="inline">
                     <input type="hidden" name="id" value="<?= $problem['id'] ?>">
                     <input type="hidden" name="method" value="delete">
-                    <button type="submit" name="delete">Удалить</button>
+                    <button type="submit" name="delete">Видалити</button>
                 </form>
             <? endif; ?>
             <article>
