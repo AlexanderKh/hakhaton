@@ -13,6 +13,9 @@
         <li class="active">
             <a href="admin.php">Адміністрування</a>
         </li>
+        <li class="active">
+            <a href="categories.php">Категорії</a>
+        </li>
 
         <? foreach ($allcategories as $category): ?>
             <li class="active">
