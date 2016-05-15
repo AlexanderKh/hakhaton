@@ -53,7 +53,7 @@ function approve($id) {
 }
 
 function delete_problem($id) {
-	$sql = "DELETE FROM problems WHERE id = '$id'";
+	$sql = ("DELETE FROM problems WHERE id = $id");
 	mysql_query($sql);
 }
 
