@@ -28,7 +28,7 @@
     <div class="chating">
         <article></article>
     </div>
-    <form action="testreg.php" method="post">
+    <form class="login" action="testreg.php" method="post">
         <p>
             <label>Ваш логин:<br></label>
             <input name="login" type="text" size="15" maxlength="15">
