@@ -6,21 +6,21 @@ include_once('models/m_categories.php');
 
 startup();
 
-if(isset($_POST['method'])) {
+if (isset($_POST['method'])) {
     switch ($_POST['method']) {
         case 'approve':
             approve($_POST['id']);
             header("Location: admin.php");
             die();
-        
+
     }
 }
 
-$allcategories=get_all_categories();
+$allcategories = get_all_categories();
 
 $problems = problems_all();
 
-$title="Підтвердження проблем";
+$title = "Підтвердження проблем";
 
 $content = view_include(
     'views/v_index.php',
