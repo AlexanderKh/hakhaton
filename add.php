@@ -16,6 +16,7 @@ if (isset($_POST['title']) && ($_POST['description']) && ($_POST['category_id'])
 
 $categories=get_all_categories();
 
+$allcategories=get_all_categories();
 $title="Нова проблема";
 
 $parameter='pl';
@@ -27,7 +28,7 @@ $content = view_include(
 // ??????? ??????.
 $page = view_include(
 	'views/v_main.php', 
-	array('title' => $title, 'content' => $content, 'parameter' => $parameter));
+	array('title' => $title, 'content' => $content, 'parameter' => $parameter, 'allcategories' => $allcategories));
 
 // ?????.
 echo $page;

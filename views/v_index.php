@@ -24,8 +24,8 @@
             <a href="problems.php?id=<?=$problem['id'];?>"><?=$problem['title'];?></a>
         </h2>
     </article>
-
-    <br><article><?= $problem['creation_date'] ?></article></br>
+       <p><?=mb_substr ($problem['description'], 0, 500, 'UTF-8');?>...</p>
+    <article><?= $problem['creation_date'] ?></article></br>
     </div>
 <?php endforeach;?>
 </div>
