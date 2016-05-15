@@ -27,7 +27,7 @@ if (isset($_POST['name_user']) && ($_POST['comment_text'])){
 	
 }
 
-$problem=get_problem_by_id($_GET['id']); //
+$problem=get_problem_by_id($_GET['id']);
 $comments=get_comments_by_problem_id($_GET['id']);
 $allcategories=get_all_categories();
 

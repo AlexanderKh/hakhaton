@@ -2,7 +2,7 @@
 <a href="/add.php">Додати свою проблему</a>
 <?foreach ($problems_by_category as $problem): ?>
 <div class="new">
-<h2><a href="/problems.php?id=<?=$problem['id'];?>"><?=$problem['title'];?></a></h2>
+<h2><a href="problems.php?id=<?=$problem['id'];?>"><?=$problem['title'];?></a></h2>
 <article>
 
 <?=$problem['description'];?> </br>

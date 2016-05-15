@@ -76,8 +76,6 @@ h2 {
 	opacity: 0.9;
 }
 .content .new {
-	width: 20%;
-	height: 20%;
 	opacity: 1;
 	background-color: white;
 	border-radius: 7px;
@@ -109,14 +107,13 @@ h2 {
 	position: relative;
 	padding-left: 1%;
 	background-color: white;
-	margin-left: 22.5%;
-	margin-top: 30%;
-	margin-bottom: 3%;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 10px;
 	opacity: 1;
 }
 .content .new_one .comm {
 	width: 80%;
-	height: 28%;
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
 	position: relative;
