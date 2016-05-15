@@ -1,7 +1,10 @@
 <div class="content">
     <div class="novost">
-        <article>Новость
+        <article class="center">
             <?= $problem['title']; ?>
+        </article>
+        <article>
+            <?= $problem['description']; ?>
         </article>
     </div>
     <div class="new_one">
@@ -21,6 +24,6 @@
                 <hr>
             <? endforeach; ?>
         </div>
-        
+
     </div>
 </div>

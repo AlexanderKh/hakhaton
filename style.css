@@ -15,7 +15,6 @@ body {
 	text-decoration:none;
 	color:#fff;
 	background-image: linear-gradient(bottom, rgb(100,170,30) 0%, rgb(129,212,51) 100%);
-	box-shadow: inset 0px 1px 0px #b2f17f, 0px 6px 0px #3d6f0d;
 	border-radius: 5px;
 }
 
@@ -87,6 +86,7 @@ h2 {
 	margin-top: 2%;
 }
 .content .novost {
+	padding: 10px;
 	width: 98%;
 	height: 50%;
 	opacity: 1;
@@ -102,10 +102,10 @@ h2 {
 .content .new_one {
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
-	width: 45%;
+	width: 80%;
 	min-height: 40%;
 	position: relative;
-	padding-left: 1%;
+	padding: 10px;
 	background-color: white;
 	margin: auto;
 	margin-top: 50px;
@@ -113,12 +113,13 @@ h2 {
 	opacity: 1;
 }
 .content .new_one .comm {
+	padding: 10px;
 	width: 80%;
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
 	position: relative;
 	margin-left: 9%;
-	background-color: black;
+	background-color: #F3F0F0;
 }
 .content .tema {
 	width: 90%;
@@ -133,7 +134,7 @@ h2 {
 	padding-top: 1%;
 }
 .content .opis {
-	padding-left: 1%;
+	padding: 1%;
 	width: 90%;
 	min-height: 30%;
 	position: relative;
@@ -165,4 +166,21 @@ h2 {
 	position: relative;
 	float: left;
 	opacity: 0.7;
+}
+.inline {
+	display: inline-block;
+}
+.inl-link {
+	background-color: white;
+	padding: 5px;
+	border-radius: 5px;
+	margin-left: 12px;
+}
+
+textarea {
+	width: 100%;
+	height: 200px;
+}
+.center {
+	text-align: center;
 }

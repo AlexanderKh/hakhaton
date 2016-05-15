@@ -25,7 +25,6 @@ function get_problem_by_id($id) {
 function create_problem ($title, $description, $category_id)
 {
 	$sql = "INSERT INTO problems(title, description, category_id, approved, creation_date) VALUES('$title', '$description', '$category_id', 0, NOW())";
-	d($sql, $die = 0);
 	$result = mysql_query($sql);
 }
 

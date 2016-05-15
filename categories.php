@@ -59,7 +59,6 @@ if (isset($_POST['method'])) {
             header("Location: categories.php");
             die();
         case 'create':
-            //d($_POST);
             create_category($_POST['name']);
             header("Location: categories.php");
             die();
@@ -67,8 +66,6 @@ if (isset($_POST['method'])) {
 }
 
 $categories = get_all_categories();
-
-//d($categories);
 
 $content = view_include(
     'views/v_categories.php',
