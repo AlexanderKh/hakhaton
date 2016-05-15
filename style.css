@@ -257,6 +257,7 @@ textarea {
 
 .header h1 {
     line-height: 80px;
+    margin-top: 0px;
 }
 
 .context-button {
