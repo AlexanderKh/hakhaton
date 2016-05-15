@@ -17,7 +17,7 @@
                 <? endforeach; ?>
             </select></p>
     </div>
-    <div class="victory"><input type="submit" value="VICTORY"></div>
+    <div class="victory"><input type="submit" value="Додати"></div>
     </form>
 
 </div>
