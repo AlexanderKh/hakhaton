@@ -1,7 +1,9 @@
 <div class="content">
     <div class="novost">
         <article class="center">
-            <?= $problem['title']; ?>
+            <h3>
+                <?= $problem['title']; ?>
+            </h3>
         </article>
         <article>
             <?= $problem['description']; ?>

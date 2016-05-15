@@ -7,9 +7,9 @@
 
 <div class="left-sidebar">
     <ul class="nav nav-pills nav-stacked">
-        <p><li class="active">
+        <li class="active">
             <a href="index.php">Головна</a>
-        </li></p>
+        </li>
         <li class="active">
             <a href="admin.php">Адміністрування</a>
         </li>
