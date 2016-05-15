@@ -15,7 +15,7 @@
             <form method="POST">
                 <p>Имя:<br><input type="text" name="name_user"><br></p>
                 <p>Текст:<br><textarea name="comment_text"></textarea></p>
-                <input type="submit" value="Коментувати">
+                <input type="submit" class="context-button" value="Коментувати">
             </form>
         </div>
 

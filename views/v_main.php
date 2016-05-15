@@ -17,6 +17,8 @@
             <a href="categories.php">Категорії</a>
         </li>
 
+        <br>
+
         <? foreach ($allcategories as $category): ?>
             <li class="active">
                 <a href="categories.php?list=<?= $category['id'] ?>" class="button"><?= $category['name'] ?></a>
