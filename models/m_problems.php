@@ -53,8 +53,8 @@ function approve($id) {
 }
 
 function delete_problem($id) {
-	$sql = ("DELETE FROM problems WHERE id = $id");
-	mysql_query($sql);
+	mysql_query("DELETE FROM comments WHERE problem_id = $id");
+	mysql_query("DELETE FROM problems WHERE id = $id");
 }
 
 function get_problems_by_category($id){
