@@ -6,6 +6,10 @@ function get_all_categories() {
 }
 
 function delete_category_by_id($id) {
+    $rmassoc = "UPDATE problems
+                SET category_id=NULL
+                WHERE category_id=$id";
+    mysql_query($rmassoc);
     $sql = "DELETE FROM categories WHERE id = '$id'";
     mysql_query($sql);
 }
