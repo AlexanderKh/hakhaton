@@ -1,5 +1,9 @@
 <div class="content">
 <a class="inl-link" href="add.php">Додати свою проблему</a>
+    <? if(empty($problems_by_category)): ?>
+        <h2>Не має жодних проблем в цій категорії</h2>
+    <? endif; ?>
+
 <?foreach ($problems_by_category as $problem): ?>
     <div class="new">
         <h2>
