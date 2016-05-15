@@ -1,6 +1,6 @@
 
 <div class="content">
-<a href="add.php">Додати свою новину</a>
+<a class="inl-link"  href="add.php">Додати свою новину</a>
 <?php foreach ($problems as $problem): ?>
 
     <div class="new">
