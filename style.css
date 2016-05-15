@@ -96,7 +96,6 @@ h2 {
 	position: relative;
 	margin-left: 1%;
 	margin-top: 2%;
-
 }
 .content .new_one {
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
@@ -182,4 +181,7 @@ textarea {
 }
 .center {
 	text-align: center;
+}
+.commentator {
+	margin-left: 11%;
 }

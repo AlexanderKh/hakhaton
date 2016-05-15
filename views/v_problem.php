@@ -17,13 +17,15 @@
             </form>
         </div>
 
-        <div class="comm">
             <? foreach ($comments as $comment): ?>
+                <div class="commentator">
                 <?= $comment['username']; ?></br>
+                </div>
+                <div class="comm">
                 <?= $comment['comment']; ?></br>
+                </div>
                 <hr>
             <? endforeach; ?>
-        </div>
 
     </div>
 </div>
