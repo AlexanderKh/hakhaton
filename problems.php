@@ -23,8 +23,9 @@ if (isset($_POST['method'])) {
 }
 
 if (isset($_POST['name_user']) && ($_POST['comment_text'])){
-	add_comment($_GET['id'], $_POST['name_user'], $_POST['comment_text'], "lol");
-	
+	$id = $_GET['id'];
+	add_comment($id, $_POST['name_user'], $_POST['comment_text'], "lol");
+	header("Location: problems.php?id=$id");
 }
 
 $problem=get_problem_by_id($_GET['id']);
